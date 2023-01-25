@@ -5,6 +5,7 @@ const Listener = () => {
     const [message, setMessage] = useState("No message yet");
     useEffect(() => {
         getLiferay().on(EVENT_NAME, (payload) => {
+            console.log("triggered");
             setMessage(payload.details[0]);
         });
     }, []);

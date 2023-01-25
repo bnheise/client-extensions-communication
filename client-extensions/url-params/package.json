@@ -1,0 +1,30 @@
+{
+  "name": "query-params-communication",
+  "version": "1.0.0",
+  "description": "Query Params Communication",
+  "dependencies": {
+    "@liferay/dxp-7.4": "*",
+    "react-router-dom": "^6.7.0"
+  },
+  "scripts": {
+    "build": "tsc && liferay build",
+    "clean": "liferay clean",
+    "deploy": "blade gw deploy",
+    "start": "liferay start"
+  },
+  "devDependencies": {
+    "@types/react": "^16.12.0",
+    "@types/react-dom": "^16.9.17",
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.11",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "openapi-typescript": "^6.1.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
+  }
+}

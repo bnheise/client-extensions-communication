@@ -1,0 +1,9 @@
+{
+  "build": {
+    "type": "customElement",
+    "options": {
+      "portletCategoryName": "category.client-extensions",
+      "htmlElementName": "query-param-communication"
+    }
+  }
+}

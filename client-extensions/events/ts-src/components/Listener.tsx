@@ -7,6 +7,7 @@ const Listener = () => {
 
   useEffect(() => {
     getLiferay().on(EVENT_NAME, (payload) => {
+      console.log("triggered")
       setMessage(payload.details[0])
     })
   }, []);

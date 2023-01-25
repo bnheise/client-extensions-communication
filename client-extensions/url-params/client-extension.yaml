@@ -6,14 +6,14 @@ assemble:
     include: index.js
     into: static/
 
-emitter:
+source:
   cssURLs:
     - /css/main.css
     # - http://localhost:8081/css/main.css
-  friendlyURLMapping: emitter
-  htmlElementName: event-communication
+  friendlyURLMapping: sender
+  htmlElementName: query-param-communication
   instanceable: false
-  name: Emitter
+  name: Sender
   portletCategoryName: category.remote-apps
   type: customElement
   urls:
@@ -24,16 +24,16 @@ emitter:
     # - http://localhost:8081/index.js
   useESM: true
   properties:
-    component: Emitter
+    component: Sender
 
-listener:
+receiver:
   cssURLs:
     - /css/main.css
     # - http://localhost:8081/css/main.css
-  friendlyURLMapping: listener
-  htmlElementName: event-communication
+  friendlyURLMapping: receiver
+  htmlElementName: query-param-communication
   instanceable: false
-  name: Listener
+  name: Receiver
   portletCategoryName: category.remote-apps
   type: customElement
   urls:
@@ -44,4 +44,4 @@ listener:
     # - http://localhost:8081/index.js
   useESM: true
   properties:
-    component: Listener
+    component: Receiver
